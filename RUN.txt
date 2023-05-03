@@ -1,0 +1,12 @@
+gedit filename.l
+Flex filename.l
+cc lex.yy.c
+./a.out
+
+Yacc and lex
+gedit filename.l
+gedit filename.y
+flex filename.l
+yacc -d  filename.y
+cc lex.yy.c  y.tab.c -ll
+./a.out
